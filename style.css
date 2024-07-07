@@ -1,0 +1,36 @@
+body {
+    background: #333;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+  }
+.type-writer h1{
+    color: white;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end),
+                blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+    /* 0% {
+        border-color: transparent;
+    }
+    50% {
+        border-color: orange;
+    }
+    100%
+    {
+        border-color: transparent;
+    } */
+}
